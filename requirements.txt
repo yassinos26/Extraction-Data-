@@ -1,0 +1,5 @@
+fastapi
+pdf2image
+google-generativeai
+uvicorn
+fastapi

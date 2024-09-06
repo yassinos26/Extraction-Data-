@@ -1,0 +1,56 @@
+1- install dependecies
+
+pip install -r requirements.txt
+or 
+pip install fastapi uvicorn google-generativeai pdf2image pillow
+
+2- run project fastapi
+
+uvicorn fastapp:app --reload
+
+ou faire run par flask (fastapi plus rapid en temps du reponse que flask ) 
+
+3- run project flask
+
+python flaskapp.py
+
+
+4-postman fastapi
+
+image test  : lien est  :        http://127.0.0.1:8000/process-image
+
+Endpoint /process-image : Envoyez une requête POST avec un corps JSON (body -> raw) contenant image_path et user_prompt.
+
+{
+    "image_path" : "C:/Users/Yassine/Desktop/freelance/maryem_flask/6.png",
+    "user_prompt":"Convertissez les données de la facture en format JSON avec les balises JSON appropriées pour les informations extraites de l'image."
+}
+
+pdf test  : lien est  :        http://127.0.0.1:8000/process-pdf
+
+Endpoint /process-pdf : Envoyez une requête POST avec un corps JSON (body -> raw) contenant pdf_path et user_prompt.
+
+{
+    "pdf_path": "C:/Users/Yassine/Desktop/freelance/maryem_flask/6.pdf",
+    "user_prompt":"Convertissez les données de la facture en format JSON avec les balises JSON appropriées pour les informations extraites de l'image."
+}
+
+5-postman flask
+
+image test  : lien est  :        http://127.0.0.1:5000/process-image
+
+Endpoint /process-image : Envoyez une requête POST avec un corps JSON (body -> raw) contenant image_path et user_prompt.
+
+{
+    "image_path" : "C:/Users/Yassine/Desktop/freelance/maryem_flask/6.png",
+    "user_prompt":"Convertissez les données de la facture en format JSON avec les balises JSON appropriées pour les informations extraites de l'image."
+}
+
+pdf test  : lien est  :        http://127.0.0.1:5000/process-pdf
+
+Endpoint /process-pdf : Envoyez une requête POST avec un corps JSON (body -> raw) contenant pdf_path et user_prompt.
+
+{
+    "pdf_path": "C:/Users/Yassine/Desktop/freelance/maryem_flask/6.pdf",
+    "user_prompt":"Convertissez les données de la facture en format JSON avec les balises JSON appropriées pour les informations extraites de l'image."
+}
